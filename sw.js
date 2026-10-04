@@ -1,5 +1,5 @@
 'use strict';
-const RELEASE_ID='02af493d1f5576ae5da96dbdc5d263b8f7fca2f61c88989679e8a98f9208d384';
+const RELEASE_ID='5940c491fcf7e72e881c5c778fb95b42e7174db7a1aa555056dfaf48abe50294';
 const CACHE='tona-approval-'+RELEASE_ID;
 const ASSETS=['index.html','app.mjs','styles.css','policy.mjs','crypto.mjs','session.mjs','release-check.mjs','sw-template.js','release.mjs','sw.js'];
 const CORE=ASSETS.filter(name=>!['release.mjs','sw.js'].includes(name));
