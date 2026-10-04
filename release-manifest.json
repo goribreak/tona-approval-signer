@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "release": "02af493d1f5576ae5da96dbdc5d263b8f7fca2f61c88989679e8a98f9208d384",
+  "release": "5940c491fcf7e72e881c5c778fb95b42e7174db7a1aa555056dfaf48abe50294",
   "files": {
-    "index.html": "57a465dab6c2aadbc94033e708d8cbe7d6067f4e558b75fe0daa09ee3accb89d",
+    "index.html": "9ce19053e73001f2ed4d14a763cbccdd145519354a16787f33af195e10bd0f02",
     "app.mjs": "a8ad250972b17e3dec38cfe9bfdb9a421ad02c13d7e6cd1889feb411415bbb18",
     "styles.css": "fcedb5a68435201bba6d76a53ce69f3942138a1c3ba86a1a029563dd32dbb0bf",
     "policy.mjs": "3d8d4c99bfbbc9d89b58b57d23497e30272e30300aa3aef3771a9d07a14e53c6",
@@ -10,7 +10,7 @@
     "session.mjs": "d84a85530986529010a4bbb3a7db39c92250bb000cf6f85fba83ff151ec6be64",
     "release-check.mjs": "8b369975fa053ec7e67cbe0b1d05618da67d4d69d42114c5d03171982330bd9c",
     "sw-template.js": "f964a4c259cece6324fecd9203cd7aeae4a3f12518cf36e75f09aec9941c3bd2",
-    "release.mjs": "1a54d4b47cd5247a9c1455c8fc69c5828332ae7678f360d6393478b7370796fd",
-    "sw.js": "20b10b817cc11b56f358232b5d13355c1ef4d08cec96c56084f272a11edb032f"
+    "release.mjs": "308d65682a5a7146fdce1de5b798cae22105553916a8f6b1da26e2834c1e6597",
+    "sw.js": "3575332c43776daa59927fc1ef9128f553bcae7b8d6a3257906fba5b06fb8eb0"
   }
 }
