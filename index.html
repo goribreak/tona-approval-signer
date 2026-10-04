@@ -10,10 +10,10 @@
 <label>パスフレーズ（12文字以上）<input type="password" id="password" autocomplete="off" maxlength="256"></label>
 <label>初回だけ、同じパスフレーズをもう一度<input type="password" id="repeat" autocomplete="off" maxlength="256"></label>
 <button id="generate" disabled>初回の鍵を作る</button>
-<label>保存済みの暗号化バックアップ<input type="file" id="key-file" accept=".json,application/json"></label>
+<label>保存済みの暗号化バックアップ<input type="file" id="key-file" accept=".json,application/json,text/plain"></label>
 <div id="backup"></div><p>バックアップは「ファイル」の「このiPhone内」へ保存してください。iCloud・PC・チャットへ送らず、パスフレーズは別に保管します。</p>
 <label><input type="checkbox" id="saved">暗号化バックアップをこのiPhone内に保存し、パスフレーズを別に控えました</label></section>
-<section><h2>3. 任せる作業を確認する</h2><label>承認するpolicy.json<input type="file" id="policy-file" accept=".json,application/json"></label>
+<section><h2>3. 任せる作業を確認する</h2><label>承認するpolicy.json<input type="file" id="policy-file" accept=".json,application/json,text/plain"></label>
 <div id="policy-summary">ファイルを選ぶと、対象の機能と変更できる範囲を表示します。</div>
 <p>追加API費用の上限は月5,000円・1タスク200円です。高リスク変更、対象外の変更、競合、古い状態、レビューやテストの異常時は停止します。</p>
 <label><input type="checkbox" id="approved">表示された全タスク・変更範囲・停止条件を承認します</label>
