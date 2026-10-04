@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Tona 開発の承認</title><link rel="stylesheet" href="styles.css"><script type="module" src="app.mjs"></script></head>
+<body><main><h1>開発を安全に任せる準備</h1><p>秘密鍵はiPhoneで作り、PCへ渡すのは公開情報だけです。</p>
+<p id="status" role="status" aria-live="polite">固定版を確認しています…</p>
+<section><h2>1. 通信を切る</h2><p>準備完了と表示されたら、機内モードにしてWi-Fiも切ってください。この画面は開いたままにします。</p>
+<label><input type="checkbox" id="phone">このiPhoneで操作し、秘密鍵をPCへ渡さないことを確認しました</label></section>
+<section><h2>2. 鍵を用意する</h2><p>初回は鍵を作ります。続きの場合は、前に保存した暗号化バックアップを読み込んでください。</p>
+<label>パスフレーズ（12文字以上）<input type="password" id="password" autocomplete="off" maxlength="256"></label>
+<label>初回だけ、同じパスフレーズをもう一度<input type="password" id="repeat" autocomplete="off" maxlength="256"></label>
+<button id="generate" disabled>初回の鍵を作る</button>
+<label>保存済みの暗号化バックアップ<input type="file" id="key-file" accept=".json,application/json"></label>
+<div id="backup"></div><p>バックアップは「ファイル」の「このiPhone内」へ保存してください。iCloud・PC・チャットへ送らず、パスフレーズは別に保管します。</p>
+<label><input type="checkbox" id="saved">暗号化バックアップをこのiPhone内に保存し、パスフレーズを別に控えました</label></section>
+<section><h2>3. 任せる作業を確認する</h2><label>承認するpolicy.json<input type="file" id="policy-file" accept=".json,application/json"></label>
+<div id="policy-summary">ファイルを選ぶと、対象の機能と変更できる範囲を表示します。</div>
+<p>追加API費用の上限は月5,000円・1タスク200円です。高リスク変更、対象外の変更、競合、古い状態、レビューやテストの異常時は停止します。</p>
+<label><input type="checkbox" id="approved">表示された全タスク・変更範囲・停止条件を承認します</label>
+<button id="sign" disabled>この内容に署名する</button></section>
+<section><h2>4. 公開情報だけPCへ渡す</h2><p>署名後、policy.json・policy.sig・host.environment.jsonをそれぞれ保存します。この3ファイルに秘密鍵は入りません。</p><div id="downloads"></div></section>
+<button id="clear">入力と鍵をこの画面から消す</button><p class="small">公開前の実装です。実際のiPhoneで使い捨て鍵の確認が完了するまで、本番鍵は作らないでください。対応していない端末では鍵の操作を停止します。</p>
+</main></body></html>
