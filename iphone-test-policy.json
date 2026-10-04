@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "policy_version": "continuous-low-risk-v1",
+  "enabled": true,
+  "repository": "warenoid-lab/tona-ai",
+  "core_branch": "feat/core-v0.1",
+  "approved_by": "human",
+  "approved_at": "2026-10-04T00:00:00Z",
+  "reviewer_logins": [
+    "tona-independent-reviewer[bot]"
+  ],
+  "tasks": [
+    {
+      "task_id": "iphone-disposable-test-v1",
+      "target_branch": "feature/iphone-disposable-test-v1",
+      "title": "iPhone署名の動作確認だけ",
+      "description": "使い捨て鍵の署名と公開3ファイル保存を確認するテスト専用データ。開発ジョブを開始せず、本番設定には登録しない。",
+      "allowed_paths": [
+        "tests/test_iphone_disposable_example.py"
+      ],
+      "risk_categories": [
+        "normal_development"
+      ],
+      "roadmap_index": 0
+    }
+  ]
+}
